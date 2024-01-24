@@ -1,0 +1,123 @@
+.HomeContainer {
+    // background-color: #fff;
+    // border-radius: 1rem;
+    // box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    width: 600px;
+    height: 100%;
+    padding: 1rem;
+
+    .HomeTitle {
+        font-weight: 700;
+        text-align: center;
+
+        span {
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            font-size: 2rem;
+            color: chocolate;
+        }
+
+        h2 {
+            font-family: 'Cafe24Supermagic-Bold-v1.0';
+            font-size: 4rem;
+        }
+
+        .progress {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            button {
+                cursor: pointer;
+                padding: 0.5rem 2rem;
+                border-radius: 2rem;
+                background-color: #eee;
+                transition: 0.2s ease-in-out;
+            }
+
+            .in {}
+
+            .done {}
+
+            .active {
+                font-weight: 700;
+                color: #fff;
+                background-color: chocolate;
+            }
+        }
+    }
+
+    .HomeList {
+        margin: 2rem 0;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            li {
+                margin: 0.5rem;
+                padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+                background-image: url('../assets/images/bucket_bg.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .bottom {
+                    margin-top: 2rem;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    .btns {
+                        button {
+                            background-color: transparent;
+                            border: 1px solid #000;
+                            font-size: 0.8rem;
+                            margin-right: 0.5rem;
+                            padding: 0.2rem 0.5rem;
+                            transition: 0.2s ease-in-out;
+                        }
+
+                        button:hover {
+                            background-color: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .date {
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    .writeBtn {
+        position: fixed;
+        z-index: 0;
+        right: 2rem;
+        bottom: 2rem;
+        background-color: chocolate;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        color: #fff;
+        font-size: 2rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .writeBtn:hover {
+        background-color: #fff;
+        color: chocolate;
+    }
+}
